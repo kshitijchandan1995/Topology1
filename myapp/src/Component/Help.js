@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Component/Help.css'; // Import your CSS file for styling
+import '../Component/new.css'; // Import your CSS file for styling
 import Common from './Common';
 
 const Help=()=> {

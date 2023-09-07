@@ -7,24 +7,23 @@
   }
   
   .rectangle {
-    width: 150px;
-    height: 150px;
+    width: 15%; /* Changed to percentage */
+    height: 15vw; /* Changed to viewport units (responsive to screen width) */
     background-color: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border: 2px solid #000;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 2.5%; /* Changed to percentage */
+    margin-right: 2.5%; /* Changed to percentage */
     border-radius: 50%;
-
   }
   
   input {
     border: none;
     outline: none;
-    width: 100px;
+    width: 80%; /* Changed to percentage */
     background-color: aqua;
   }
   
@@ -38,50 +37,59 @@
   
   .div1,
   .div2,
-  .div3,
+  /* .div3, */
   .div4 {
     position: absolute;
-    width: 100%;
+    width: 15%;
+    height: 15vw; /* Changed to percentage */
     text-align: center;
     padding: 8px;
   }
   
-  .div1 {
-    top: 250px;
-    left: -55px;
+  .div3{
+    
+        position: absolute;
+        width: 15%;
+        height: 25vw; 
+        text-align: center;
+        padding: 8px;
+      
   }
+  /* div1 {
+    top: 10%; 
+    left: -5%; 
+  } */
   
   .div2 {
-    top: 300px;
-    left: 75px;
+    top: 30%; /* Changed to percentage */
+    left: 15%; /* Changed to percentage */
   }
   
-  .div3 {
-    top: 500px;
-    left: -55px;
-  }
+  /* .div3 {
+    top: 70%; 
+    left: -25%; 
+  } */
   
   .div4 {
-    top: 400px;
-    left: 75px;
+    top: 40%; /* Changed to percentage */
+    left: 15%; /* Changed to percentage */
   }
   
   .line1,
   .line2 {
-    width: 155px; /* Adjust the width of the line as needed */
-    height: 2px;
+    width: 16.9%; /* Changed to percentage */
+    height: 0.2vw; /* Changed to viewport units (responsive to screen width) */
     background-color: #e74c3c;
     position: absolute;
-    top: 370px;
-    
+    top: 50%; /* Changed to percentage */
   }
   
   .line1 {
-    left: 480px;
+    left: 25.6%; /* Changed to percentage */
   }
   
   .line2 {
-    left: 788px;
+    left: 57.5%; /* Changed to percentage */
   }
   
   /* Media Query */
@@ -94,13 +102,15 @@
       margin: 10px auto;
     }
   
-    .div1,
+    /* .div1, */
     .div2,
-    .div3,
+    /* .div3, */
     .div4 {
       position: static;
       text-align: center;
       padding: 8px;
+      width: 80%; /* Adjust as needed */
+      margin: 5px auto; /* Adjust as needed */
     }
   
     .line1,
@@ -109,26 +119,22 @@
     }
   }
   
-  
-
-  .div_above_line1{
+  .div_above_line1 {
     order: -1;
   }
-
   
-  .div_below_line1{
-   order: 1;
+  .div_below_line1 {
+    order: 1;
   }
-
-  .div_above_line2{
+  
+  .div_above_line2 {
     order: -1;
-
   }
-
-  .div_above_line1{
-order: 1;
+  
+  .div_above_line1 {
+    order: 1;
   }
-
+  
   .line-container {
     display: flex;
     flex-direction: column;
@@ -136,8 +142,9 @@ order: 1;
     justify-content: center;
     height: 100vh;
   }
-
+  
   .text-box {
     text-align: center;
     margin: 10px 0;
   }
+  
