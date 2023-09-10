@@ -45,8 +45,8 @@ const Help=()=> {
     <div className='line2'></div>
     <div className='div_below_line2'><input type='text' placeholder='From Zone'></input></div> */}
 
-      <div className='div3'><input type='text' placeholder='HA'></input></div>
-        <div className='div4'><input type='text' placeholder='TC '></input></div>
+      {/* <div className='div3'><input type='text' placeholder='HA'></input></div>
+        <div className='div4'><input type='text' placeholder='TC '></input></div> */}
         <Common ></Common>
     </div>
   );

@@ -6,8 +6,17 @@
     width: 100%;
   }
   
+  .row{
+    width: 100%;
+  }
+  .basetextfield{
+    margin: 5%;
+    max-width: 90%;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+  }
   .rectangle {
-    width: 15%; /* Changed to percentage */
+   /* width: 15%; Changed to percentage */
     height: 15vw; /* Changed to viewport units (responsive to screen width) */
     background-color: #f0f0f0;
     display: flex;
@@ -37,7 +46,7 @@
   
   .div1,
   .div2,
-  /* .div3, */
+  .div3,
   .div4 {
     position: absolute;
     width: 15%;
@@ -55,20 +64,20 @@
         padding: 8px;
       
   }
-  /* div1 {
-    top: 10%; 
+  div1 {
+    top: 25%; 
     left: -5%; 
-  } */
+  }
   
   .div2 {
     top: 30%; /* Changed to percentage */
     left: 15%; /* Changed to percentage */
   }
   
-  /* .div3 {
+  .div3 {
     top: 70%; 
     left: -25%; 
-  } */
+  }
   
   .div4 {
     top: 40%; /* Changed to percentage */
@@ -77,46 +86,13 @@
   
   .line1,
   .line2 {
-    width: 16.9%; /* Changed to percentage */
+    max-width: 100%;/* Changed to percentage */
     height: 0.2vw; /* Changed to viewport units (responsive to screen width) */
     background-color: #e74c3c;
-    position: absolute;
-    top: 50%; /* Changed to percentage */
-  }
-  
-  .line1 {
-    left: 25.6%; /* Changed to percentage */
-  }
-  
-  .line2 {
-    left: 57.5%; /* Changed to percentage */
-  }
-  
-  /* Media Query */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .rectangle {
-      margin: 10px auto;
-    }
-  
-    /* .div1, */
-    .div2,
-    /* .div3, */
-    .div4 {
-      position: static;
-      text-align: center;
-      padding: 8px;
-      width: 80%; /* Adjust as needed */
-      margin: 5px auto; /* Adjust as needed */
-    }
-  
-    .line1,
-    .line2 {
-      position: static;
-    }
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 1% 
+    ;/* Changed to percentage */
   }
   
   .div_above_line1 {
@@ -127,11 +103,14 @@
     order: 1;
   }
   
+  .from_Zone{
+    background-color: #e74c3c;
+  }
   .div_above_line2 {
     order: -1;
   }
   
-  .div_above_line1 {
+  .div_above_line2 {
     order: 1;
   }
   
@@ -142,9 +121,22 @@
     justify-content: center;
     height: 100vh;
   }
-  
+  .line {
+    border-bottom: 2px solid red;
+    margin-top: 15%;
+    width: 90%;
+}
   .text-box {
     text-align: center;
     margin: 10px 0;
+    margin-top: 20%;
+    margin-left: 1%;
+    max-width: 100%;
   }
-  
+  .text-box2 {
+    text-align: center;
+    margin: 10px 0;
+    margin-top: 15%;
+    margin-left: 1%;
+    max-width: 100%;
+  }
